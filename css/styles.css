@@ -1,0 +1,40 @@
+/*
+pallete
+text:
+main color - color: #212121;
+secondary color - color: #757575;
+back colors:
+white - #FFFFFF;
+dark - #2F303A;
+grey - #F5F4FA;
+interactive elements:
+hover/focus - #F5F4FA;
+address - rgba(255, 255, 255, 0.6);
+*/
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --background: #ffffff;
+  --dark-background: #2f303a;
+  --grey-background: #f5f4fa;
+  --interactive-elements: #f5f4fa;
+  --address: rgba(255, 255, 255, 0.6);
+}
+/*global styles*/
+body {
+  color: var(--main-color);
+  background-color: var(--background);
+}
+.section title {
+  color: var(--main-color);
+}
+.description {
+  color: var(--secondary-color);
+}
+/*обнуление встроенных стилей для списков/ссылок*/
+.list {
+  list-style: none;
+}
+.link-underline {
+  text-decoration: none;
+}
