@@ -162,6 +162,15 @@ body {
 .footer {
   background-color: var(--dark-background);
 }
+.footer .logo {
+  color: var(--third-title-color);
+
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
 .footer-list .location {
   color: var(--third-title-color);
 
@@ -177,4 +186,21 @@ body {
   font-size: 14px;
   line-height: 1.7;
 }
-/*portfolio color/text decoration*/
+/****portfolio color/text decoration****/
+/* filter */
+.filter-list .filter-button {
+  background-color: var(--grey-background);
+  color: var(--main-title-color);
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.filter-list .filter-button:hover,
+.filter-button:focus {
+  background-color: var(--interactive-elements);
+}
