@@ -56,7 +56,7 @@ img {
 .logo {
   color: var(--main-titles-color);
 
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
 
   font-weight: bold;
   font-size: 26px;
@@ -112,6 +112,8 @@ img {
   background-color: var(--interactive-elements);
   color: var(--third-title-color);
 
+  font-family: Roboto, sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
@@ -164,9 +166,13 @@ img {
 
 .team-section {
   background-color: var(--grey-background);
+  padding-bottom: 94px;
+}
+.team-section .list-item{
+  background-color: var(--background-main);
 }
 .team-title {
-  color: var (--main-titles-color);
+  color: var(--main-titles-color);
 
   font-weight: bold;
   font-size: 36px;
@@ -186,6 +192,10 @@ img {
   font-size: 16px;
   line-height: 1.2;
 }
+.team-section .list-item{
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px;
+}
 /*footer*/
 .footer {
   background-color: var(--dark-background);
@@ -193,7 +203,7 @@ img {
 .footer .logo {
   color: var(--third-title-color);
 
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -219,25 +229,44 @@ img {
 /* ======   filter   ======== */
 .portfolio-main {
   background-color: var(--background-main);
+
+  padding-top: 100px;
+  padding-bottom: 94px;
+
 }
 .filter-list .filter-button {
   background-color: var(--grey-background);
-  color: var(--main-title-color);
+  color: var(--main-titles-color);
 
   border-radius: 4px;
   border: 1px solid transparent;
 
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 22px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
 }
 .filter-list .filter-button:hover,
 .filter-button:focus {
-  background-color: var(--interactive-elements);
+  color: var(--third-title-color);
+background-color: var(--interactive-elements);
 }
 
 /* ===== gallery ===== */
+.portfolio-gallery .list-item{
+  background-color: var(--background-main);
+
+max-width: 370px;
+  border:  1px solid #EEEEEE;
+
+}
 
 .portfolio-gallery .gallery-subtitle {
   color: var(--main-titles-color);
@@ -298,23 +327,29 @@ img {
 /*===========main================*/
 
 /*section with button*/
-
+.main-section{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .main-section .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
 }
 
 /*section our qualities*/
+.qualities-section{
+  padding-top: 94px;
+}
 
 .qualities-section .qualities-list {
   display: flex;
+
 }
-.qualities-section .list-item {
-  margin-top: 94px;
-}
+/*.qualities-section .list-item {
+  margin-top: 94px;}*/
+
 .qualities-section .list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -324,15 +359,101 @@ img {
 }
 
 /*section our tasks*/
+.tasks-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .tasks-section .tasks-list {
   display: flex;
 }
-.tasks-section .tasks-title {
-  margin-top: 94px;
-}
+
 .tasks-section .tasks-list {
   margin-top: 50px;
 }
 .tasks-section .list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+/*section our team*/
+
+.team-section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-section .team-list{
+  display: flex;
+}
+
+.team-section .team-list{
+  margin-top: 50px;
+}
+
+.team-section .list-item:not(:last-child){
+  margin-right: 30px;
+}
+.team-section .caption{
+  text-align: center;
+
+  margin-top: 30px;
+}
+.team-section .description{
+  text-align: center;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+/*-----======footer=====------*/
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+
+.footer .address{
+  margin-top: 20px;
+}
+.footer .list-item{
+  margin-top: 9px;
+}
+
+/*==========PORTFOLIO ITEMS DIRECTION=======*/
+
+.portfolio-main .filter-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.filter-list .list-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.portfolio-main .portfolio-gallery{
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 56px;
+}
+.portfolio-gallery .list-item{
+  padding-bottom: 20px;
+
+}
+
+.portfolio-gallery .list-item:not(:nth-child(3n)){
+  margin-right: 30px;
+}
+
+.portfolio-gallery .list-item:nth-child(n+4){
+  margin-top: 30px;
+}
+.portfolio-gallery .gallery-subtitle{
+  margin-top: 20px;
+  margin-left: 24px;
+}
+.portfolio-gallery .gallery-description{
+  margin-top: 4px;
+  margin-left: 24px;
 }
