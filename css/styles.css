@@ -11,6 +11,12 @@ interactive elements: #2196F3 ;
 hover/focus - #F5F4FA;
 address - #757575;;
 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --main-titles-color: #212121;
   --secondary-titles-color: #757575;
@@ -21,7 +27,7 @@ address - #757575;;
   --interactive-elements: #2196f3;
   --address: #757575;
 }
-/*global styles*/
+/*=======!!!!!!global styles!!!!!!=======*/
 body {
   color: var(--main-titles-color);
   background-color: var(--background-main);
@@ -36,12 +42,15 @@ body {
   color: var(--secondary-titles-color);
 }
 
-/*обнуление встроенных стилей для списков/ссылок*/
+/*=======обнуление встроенных стилей для списков/ссылок===========*/
 .list {
   list-style: none;
 }
 .link-underline {
   text-decoration: none;
+}
+img {
+  display: block;
 }
 /*logo*/
 .logo {
@@ -56,7 +65,13 @@ body {
 .logo-part {
   color: var(--interactive-elements);
 }
-/*header text/color*/
+/*======header text/color=========*/
+
+.header {
+  background-color: var(--background-main);
+  border: 1px solid #ececec;
+}
+
 .header-list .list-link {
   color: var(--main-titles-color);
 
@@ -103,12 +118,20 @@ body {
 
   border: 1px solid transparent;
   border-radius: 4px;
+
   min-width: 200px;
+  height: 50px;
+
   text-align: center;
   display: block;
+
   padding: 10px 32px;
+  margin-top: 30px;
 }
 /*qualities section*/
+.qualities-section {
+  background-color: var(--background-main);
+}
 
 .qualities-list .caption {
   color: var(--main-titles-color);
@@ -125,6 +148,10 @@ body {
   line-height: 1.7;
 }
 /*tasks section*/
+
+.tasks-section {
+  background-color: var(--background-main);
+}
 .tasks-title {
   color: var(--main-titles-color);
 
@@ -190,6 +217,9 @@ body {
 /****portfolio color/text decoration****/
 
 /* ======   filter   ======== */
+.portfolio-main {
+  background-color: var(--background-main);
+}
 .filter-list .filter-button {
   background-color: var(--grey-background);
   color: var(--main-title-color);
@@ -225,4 +255,84 @@ body {
   line-height: 1.8;
 
   letter-spacing: 0.03em;
+}
+
+/* --------------------content directions ------------------*/
+
+/* === main === */
+/*common*/
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+/*header*/
+.header .container {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.header .navigation {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 93px;
+}
+.header .header-list {
+  display: flex;
+}
+.header .list-item {
+  margin-right: 50px;
+}
+.header .list-item:last-child {
+  margin-right: 0;
+}
+.header .header-address {
+  display: flex;
+}
+.header .address {
+  margin-left: auto;
+}
+/*===========main================*/
+
+/*section with button*/
+
+.main-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/*section our qualities*/
+
+.qualities-section .qualities-list {
+  display: flex;
+}
+.qualities-section .list-item {
+  margin-top: 94px;
+}
+.qualities-section .list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.qualities-section .qualities-description {
+  margin-top: 10px;
+}
+
+/*section our tasks*/
+.tasks-section .tasks-list {
+  display: flex;
+}
+.tasks-section .tasks-title {
+  margin-top: 94px;
+}
+.tasks-section .tasks-list {
+  margin-top: 50px;
+}
+.tasks-section .list-item:not(:last-child) {
+  margin-right: 30px;
 }
