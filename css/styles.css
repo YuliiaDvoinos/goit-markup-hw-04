@@ -297,7 +297,7 @@ img {
 .header .container {
   display: flex;
   align-items: center;
-  padding: 25px 0;
+  padding: 25px 15px;
 }
 
 .header .navigation {
