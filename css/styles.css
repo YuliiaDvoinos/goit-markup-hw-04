@@ -168,7 +168,7 @@ img {
   background-color: var(--grey-background);
   padding-bottom: 94px;
 }
-.team-section .list-item{
+.team-section .list-item {
   background-color: var(--background-main);
 }
 .team-title {
@@ -192,8 +192,9 @@ img {
   font-size: 16px;
   line-height: 1.2;
 }
-.team-section .list-item{
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+.team-section .list-item {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
+    0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
 }
 /*footer*/
@@ -232,7 +233,6 @@ img {
 
   padding-top: 100px;
   padding-bottom: 94px;
-
 }
 .filter-list .filter-button {
   background-color: var(--grey-background);
@@ -251,21 +251,19 @@ img {
 
   text-align: center;
   letter-spacing: 0.03em;
-
 }
 .filter-list .filter-button:hover,
 .filter-button:focus {
   color: var(--third-title-color);
-background-color: var(--interactive-elements);
+  background-color: var(--interactive-elements);
 }
 
 /* ===== gallery ===== */
-.portfolio-gallery .list-item{
+.portfolio-gallery .list-item {
   background-color: var(--background-main);
 
-max-width: 370px;
-  border:  1px solid #EEEEEE;
-
+  max-width: 370px;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-gallery .gallery-subtitle {
@@ -327,7 +325,7 @@ max-width: 370px;
 /*===========main================*/
 
 /*section with button*/
-.main-section{
+.main-section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -335,17 +333,15 @@ max-width: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 /*section our qualities*/
-.qualities-section{
+.qualities-section {
   padding-top: 94px;
 }
 
 .qualities-section .qualities-list {
   display: flex;
-
 }
 /*.qualities-section .list-item {
   margin-top: 94px;}*/
@@ -359,7 +355,7 @@ max-width: 370px;
 }
 
 /*section our tasks*/
-.tasks-section{
+.tasks-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -376,27 +372,27 @@ max-width: 370px;
 
 /*section our team*/
 
-.team-section{
+.team-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-section .team-list{
+.team-section .team-list {
   display: flex;
 }
 
-.team-section .team-list{
+.team-section .team-list {
   margin-top: 50px;
 }
 
-.team-section .list-item:not(:last-child){
+.team-section .list-item:not(:last-child) {
   margin-right: 30px;
 }
-.team-section .caption{
+.team-section .caption {
   text-align: center;
 
   margin-top: 30px;
 }
-.team-section .description{
+.team-section .description {
   text-align: center;
 
   margin-top: 10px;
@@ -404,56 +400,51 @@ max-width: 370px;
 }
 
 /*-----======footer=====------*/
-.footer{
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-
-
-.footer .address{
+.footer .address {
   margin-top: 20px;
 }
-.footer .list-item{
+.footer .list-item {
   margin-top: 9px;
 }
 
 /*==========PORTFOLIO ITEMS DIRECTION=======*/
 
-.portfolio-main .filter-list{
+.portfolio-main .filter-list {
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
-.filter-list .list-item:not(:last-child){
+.filter-list .list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.portfolio-main .portfolio-gallery{
+.portfolio-main .portfolio-gallery {
   display: flex;
   flex-wrap: wrap;
 
   margin-top: 56px;
 }
-.portfolio-gallery .list-item{
+.portfolio-gallery .list-item {
   padding-bottom: 20px;
-
 }
 
-.portfolio-gallery .list-item:not(:nth-child(3n)){
+.portfolio-gallery .list-item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.portfolio-gallery .list-item:nth-child(n+4){
+.portfolio-gallery .list-item:nth-child(n + 4) {
   margin-top: 30px;
 }
-.portfolio-gallery .gallery-subtitle{
+.portfolio-gallery .gallery-subtitle {
   margin-top: 20px;
   margin-left: 24px;
 }
-.portfolio-gallery .gallery-description{
+.portfolio-gallery .gallery-description {
   margin-top: 4px;
   margin-left: 24px;
 }
