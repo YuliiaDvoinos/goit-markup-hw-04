@@ -458,7 +458,8 @@ img {
 }
 .team-section .team-socials {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 .team-socials .list-item {
   display: flex;
@@ -613,4 +614,7 @@ img {
 }
 .team-socials .social-link:hover {
   background-color: var(--interactive-elements);
+}
+.social-link:hover .social-logo {
+  fill: var(--svg-secondary);
 }
