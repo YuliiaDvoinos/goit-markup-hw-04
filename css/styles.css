@@ -454,12 +454,13 @@ img {
   text-align: center;
 
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 .team-section .team-socials {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
 }
 .team-socials .list-item {
   display: flex;
