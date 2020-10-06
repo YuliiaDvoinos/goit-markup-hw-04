@@ -107,6 +107,12 @@ img {
 /*main-section*/
 .main-section {
   background-color: var(--dark-background);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/section-main/bg-img.jpg);
 }
 .main-section .section-title {
   color: var(--third-title-color);
@@ -144,6 +150,38 @@ img {
   background-color: var(--background-main);
 }
 
+.qualities-list .list-item::before {
+  content: "";
+  display: block;
+
+  height: 120px;
+  background-color: var(--grey-background);
+  margin-bottom: 30px;
+}
+.antenna::before {
+  background-image: url(../images/svg/qualities/antenna.svg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.clock::before {
+  background-image: url(../images/svg/qualities/clock.svg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.diagram::before {
+  background-image: url(../images/svg/qualities/diagram.svg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.astronaut::before {
+  background-image: url(../images/svg/qualities/astronaut.svg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .qualities-list .caption {
   color: var(--main-titles-color);
 
