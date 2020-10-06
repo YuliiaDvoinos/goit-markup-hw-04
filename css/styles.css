@@ -344,7 +344,10 @@ img {
   max-width: 370px;
   border: 1px solid #eeeeee;
 }
-
+.portfolio-gallery .list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-gallery .gallery-subtitle {
   color: var(--main-titles-color);
 
@@ -403,8 +406,17 @@ img {
 .header .header-address {
   display: flex;
 }
+
+.header-address .address-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .header .address {
   margin-left: auto;
+}
+.header-svg {
+  margin-right: 10px;
 }
 /*===========main================*/
 
@@ -625,6 +637,14 @@ img {
 }
 
 /*!!!!!!!!!!!svg!!!!!!!*/
+/*header*/
+.header-svg {
+  fill: var(--address);
+}
+.header-address .address-link:hover .header-svg,
+.header-address .address-link:focus .header-svg {
+  fill: var(--svg-accent);
+}
 
 /* partner section*/
 .partner-logo {
